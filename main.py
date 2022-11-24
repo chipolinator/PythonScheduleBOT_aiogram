@@ -9,7 +9,7 @@ from aiogram import Bot, Dispatcher, executor, types
 
 df = pd.read_csv('fin.csv')
 
-API_TOKEN = '5452699061:AAE7b2ujFY1zYoEQxaSXyVbDamdYGizI3fQ'
+API_TOKEN = 'вставьте токен'
 
 logging.basicConfig(level=logging.INFO)
 
