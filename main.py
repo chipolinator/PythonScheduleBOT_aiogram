@@ -14,16 +14,12 @@ API_TOKEN = 'мой токен'
 logging.basicConfig(level=logging.INFO)
 
 
-weekBot = int(((datetime.now() - datetime(datetime.now().year, 9, 1))/7).days)
+weekBot = int(((datetime.now() - datetime(datetime.now().year, 9, 1))/7).days + 1)
 
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
-print(weekBot)
-print(datetime.now())
-print(datetime(datetime.now().year, 9, 1))
-print(((datetime.now() - datetime(datetime.now().year, 9, 1))).days)
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
