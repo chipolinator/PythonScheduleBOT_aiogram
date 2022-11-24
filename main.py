@@ -75,7 +75,7 @@ async def rasweek(message: types.Message):
                 ans += "\n\n⏰" + time + aud + predmet + "\n" + prepod
 
                 data[date] += [time, aud, prepod]
-        await message.reply(ans)
+            await message.reply(ans)
 
 
 @dp.message_handler(commands=["day"])
